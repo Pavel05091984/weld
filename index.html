@@ -25,9 +25,14 @@
       <a-entity
         environment=" preset : default ; dressingAmount: 5; skyType: atmosphere;  "
       >
-        <a-camera position="0 1.6 0">
-          <a-cursor color="black"></a-cursor> </a-camera
-      ></a-entity>
+       <a-entity id="Player_1" position="0 1.6 1">
+        <a-entity
+          camera
+          look-controls
+          wasd-controls="acceleration: 15; maxVelocity: 8"
+        >
+        </a-entity>
+      </a-entity>
     </a-scene>
   </body>
 </html>
